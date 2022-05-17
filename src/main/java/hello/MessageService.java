@@ -14,6 +14,6 @@ public class MessageService {
   }
   
   public String getMessage(String name) {
-    return "Helloz " + name;
+    return "Helloz2 " + name;
   }
 }
