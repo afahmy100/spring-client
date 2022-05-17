@@ -1,13 +1,13 @@
 pipeline {
   agent any
   tools { 
-    maven 'maven'
+    maven 'M3'
   }
-  environment {
-    LOGIN_URL = 'https://c115-e.us-south.containers.cloud.ibm.com'
-    LOGIN_PORT = '32370'
+  environment {    
+    LOGIN_URL = 'https://api.crc.testing'
+    LOGIN_PORT = '6443'
     PROJECT = 'springclient-ns'
-  }  
+  }    
   stages {
     stage ('Initialize') {
       steps {
