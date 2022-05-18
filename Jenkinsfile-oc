@@ -1,7 +1,8 @@
 pipeline {
   agent {
     label 'maven'
-   tools { 
+  }
+  tools { 
     maven 'M3'
   }
   environment {    
