@@ -34,7 +34,7 @@ public class APIControllerTest {
 				.accept(MediaType.APPLICATION_JSON);
 		MvcResult result = (MvcResult) mockMvc.perform(requestBuilder)
 				.andExpect(status().isOk())
-				.andExpect(jsonPath("$.message", is("Hello "+name)))
+				.andExpect(jsonPath("$.message", is("Helloz "+name)))
 				.andDo(print())
 				.andReturn();
 		System.out.println(result.getResponse());
